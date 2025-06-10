@@ -12,9 +12,9 @@
       "supportsTablet": true
     },
     "web": {
-      "bundler": "metro",
-      "output": "single",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "output": "static",
+      "bundler": "metro"
     },
     "plugins": [
       "expo-router",
@@ -22,7 +22,8 @@
       "expo-web-browser"
     ],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "baseUrl": "/web-deploy"
     },
     "extra": {
       "router": {},
