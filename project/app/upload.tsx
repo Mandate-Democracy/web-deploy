@@ -29,7 +29,7 @@ export default function UploadScreen() {
         }
         return prev + 1;
       });
-    }, 150);
+    }, 50);
 
     return () => clearInterval(interval);
   }, []);

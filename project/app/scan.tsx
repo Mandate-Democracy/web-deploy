@@ -12,6 +12,9 @@ export default function ScanScreen() {
   const [permission, requestPermission] = useCameraPermissions();
   const [photo, setPhoto] = useState<string | null>(null);
   const [cameraRef, setCameraRef] = useState<any>(null);
+	
+	if (Platform.OS === 'web')
+		router.push('/upload');
 
   const handleBack = () => {
     if (photo) {
